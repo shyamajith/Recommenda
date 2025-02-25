@@ -42,7 +42,13 @@ def get_users():
     conn.close()
 
     user_list = [
-        {"id": row[0], "name": row[1], "age": row[2], "favorite_author": row[3], "favorite_language": row[4], "genres": row[5].split(",")}
+        {"id": row[0], 
+         "name": row[1], 
+         "age": row[2], 
+         "favorite_author": row[3], 
+         "favorite_language": row[4], 
+         "genres": row[5].split(",")
+        }
         for row in users
     ]
     
